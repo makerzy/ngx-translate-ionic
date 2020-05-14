@@ -12,6 +12,7 @@ export class HomePage {
   browserLang;
   constructor(public translate: TranslateService) {
     translate.addLangs(["en", "fr", "es"]);
+    translate.setDefaultLang("en");
     Device.getLanguageCode()
       .then((lang) => {
         //returns Object
