@@ -9,12 +9,39 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">i18n-App</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        i18n-App
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-label for="langs">{{ "HOME.Select" | translate }}</ion-label>
+        <ion-select (click)="loadFlags()" placeholder='{{ "HOME.Select" | translate }}' id="langs" #langselect
+          (ionChange)="translate.use(langselect.value)">
+          <ion-select-option *ngFor="let lang of translate.getLangs()" [value]="lang">
+
+          </ion-select-option>
+        </ion-select>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ "HOME.Header" | translate }}</h2>
+
+      <p>
+        {{ "HOME.Content" | translate }}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <section>
+
+
+
+  </section>
+
 </ion-content>

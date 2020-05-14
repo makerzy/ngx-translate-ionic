@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+ion-card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ion-card-title {
+  margin-bottom: 1.8em;
+}
+
+ion-card-subtitle {
+  max-width: 200px;
+  margin: auto;
+}
