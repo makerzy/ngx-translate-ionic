@@ -1,0 +1,7 @@
+{
+  "name": "i18nApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
