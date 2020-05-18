@@ -13,7 +13,7 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { MaterialModule } from "./material.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { SelectorComponent } from "./components/selector/selector.component";
+import { ComponentModule } from "./components/component/component.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -27,7 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     IonicModule.forRoot(),
     MaterialModule,
     AppRoutingModule,
-
+    ComponentModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
-import { Spain, USA, France } from "../../../assets/country.json";
+import { Spanish, USA, French } from "../../../assets/country.json";
 import { Plugins } from "@capacitor/core";
 const { Device } = Plugins;
 
@@ -13,7 +13,7 @@ export class SelectorComponent implements OnInit {
   constructor(public translate: TranslateService) {}
 
   ngOnInit() {} //Follow add language array in the app.component.ts
-  country = [USA, France, Spain];
+  country = [USA, French, Spanish];
   loadFlags() {
     setTimeout(() => {
       let radios = document.getElementsByClassName("mat-option");
