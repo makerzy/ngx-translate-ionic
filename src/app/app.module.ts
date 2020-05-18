@@ -11,6 +11,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
+import { MaterialModule } from "./material.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { SelectorComponent } from "./components/selector/selector.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -22,7 +25,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    MaterialModule,
     AppRoutingModule,
+
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -31,13 +36,14 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
-  exports: [TranslateModule],
+  exports: [TranslateModule, MaterialModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

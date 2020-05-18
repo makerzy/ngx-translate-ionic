@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-label for="langs">{{ "HOME.Select" | translate }}</mat-label>
+  <mat-select (click)="loadFlags()" placeholder='{{ "HOME.Select" | translate }}' id="langs" #langselect
+    (selectionChange)="translate.use(langselect.value)">
+    <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang"></mat-option>
+  </mat-select>
+</mat-form-field>

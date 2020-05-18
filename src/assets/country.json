@@ -1,0 +1,9 @@
+{
+  "USA": { "name": "US", "value": "en", "img": "assets/imgs/usImg.png" },
+  "France": {
+    "name": "France",
+    "value": "fr",
+    "img": "assets/imgs/frImg.png"
+  },
+  "Spain": { "name": "Spain", "value": "es", "img": "assets/imgs/esImg.png" }
+}

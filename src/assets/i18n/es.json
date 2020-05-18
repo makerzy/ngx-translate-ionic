@@ -1,7 +1,7 @@
 {
   "HOME": {
     "Header": "Página de traducción",
-    "Content": "Esta página fue creada para mostrar 5 idiomas locales usando ngx-translate, seleccione su idioma preferido de las opciones anteriores",
+    "Content": "Esta página fue creada para mostrar 3 idiomas locales usando ngx-translate, seleccione su idioma preferido de las opciones anteriores",
     "Select": "Seleccione el idioma"
   }
 }

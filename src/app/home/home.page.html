@@ -1,10 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  <mat-toolbar color="primary">
+    <span>i18n-App</span>
+    <span class="spacer"></span>
+    <span>
+      <app-selector></app-selector>
+    </span>
+  </mat-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -20,12 +23,7 @@
       </ion-card-title>
       <ion-card-subtitle>
         <ion-label for="langs">{{ "HOME.Select" | translate }}</ion-label>
-        <ion-select (click)="loadFlags()" placeholder='{{ "HOME.Select" | translate }}' id="langs" #langselect
-          (ionChange)="translate.use(langselect.value)">
-          <ion-select-option *ngFor="let lang of translate.getLangs()" [value]="lang">
 
-          </ion-select-option>
-        </ion-select>
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
@@ -37,11 +35,5 @@
     </ion-card-content>
   </ion-card>
 
-
-  <section>
-
-
-
-  </section>
 
 </ion-content>

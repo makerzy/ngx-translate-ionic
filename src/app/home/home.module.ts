@@ -6,6 +6,8 @@ import { HomePage } from "./home.page";
 
 import { HomePageRoutingModule } from "./home-routing.module";
 import { TranslateModule } from "@ngx-translate/core";
+import { SelectorComponent } from "../components/selector/selector.component";
+import { MaterialModule } from "../material.module";
 
 @NgModule({
   imports: [
@@ -14,7 +16,9 @@ import { TranslateModule } from "@ngx-translate/core";
     IonicModule,
     TranslateModule,
     HomePageRoutingModule,
+    MaterialModule,
   ],
-  declarations: [HomePage],
+  declarations: [HomePage, SelectorComponent],
+  exports: [SelectorComponent],
 })
 export class HomePageModule {}
