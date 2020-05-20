@@ -1,13 +1,17 @@
 {
-  "USA": { "name": "US", "value": "en", "img": "assets/imgs/usImg.png" },
+  "USA": {
+    "name": "US",
+    "value": "en",
+    "img": "assets/imgs/country-flags/usImg.png"
+  },
   "French": {
     "name": "French",
     "value": "fr",
-    "img": "assets/imgs/frImg.png"
+    "img": "assets/imgs/country-flags/frImg.png"
   },
   "Spanish": {
     "name": "Spanish",
     "value": "es",
-    "img": "assets/imgs/esImg.png"
+    "img": "assets/imgs/country-flags/esImg.png"
   }
 }
